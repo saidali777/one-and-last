@@ -477,10 +477,7 @@ async def get_shortlink(chat_id, link):
     if 'shortlink' in settings.keys():
         URL = settings['shortlink']
     else:
-        URL = SHORTLINK_URL
-    if 'shortlink_api' in settings.keys():
-        API = settings['shortlink_api']
-    else:
+       
         API = SHORTLINK_API
     https = link.split(":")[0]  # splitting https or http from link
     if "http" == https:  # if https == "http":
